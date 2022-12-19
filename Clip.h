@@ -18,6 +18,6 @@ public:
     Clip();
     Clip(string name, int ticks, FollowAction* actions);
     Clip(const Clip& clip);
-    void start();
+    void start(int amount);
     action prioritizeAction(pair<float, float> likelihood);
 };

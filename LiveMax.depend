@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1671466486 source:e:\studying\motionpredication\berlin\livemax\main.cpp
+1671479129 source:e:\studying\motionpredication\berlin\livemax\main.cpp
 	<iostream>
 	<bits/stdc++.h>
 	<vector>
@@ -7,12 +7,12 @@
 	<assert.h>
 	<string>
 	"helper_functions.h"
-	"Ticks.h"
+	"Music.h"
 
 1671461620 e:\studying\motionpredication\berlin\livemax\ticks.h
 	"Clip.h"
 
-1671461576 e:\studying\motionpredication\berlin\livemax\clip.h
+1671473365 e:\studying\motionpredication\berlin\livemax\clip.h
 	<iostream>
 	<bits/stdc++.h>
 	<vector>
@@ -29,7 +29,7 @@
 	<bits/stdc++.h>
 	"Clip.h"
 
-1671461312 source:e:\studying\motionpredication\berlin\livemax\clip.cpp
+1671473426 source:e:\studying\motionpredication\berlin\livemax\clip.cpp
 	"Clip.h"
 
 1671462749 source:e:\studying\motionpredication\berlin\livemax\ticks.cpp
@@ -37,5 +37,12 @@
 	"helper_functions.h"
 
 1671463990 source:e:\studying\motionpredication\berlin\livemax\helper_functions.cpp
+	"helper_functions.h"
+
+1671472520 e:\studying\motionpredication\berlin\livemax\music.h
+	"Clip.h"
+
+1671473404 source:e:\studying\motionpredication\berlin\livemax\music.cpp
+	"Music.h"
 	"helper_functions.h"
 

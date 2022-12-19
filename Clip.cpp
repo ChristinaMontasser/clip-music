@@ -23,9 +23,10 @@ Clip::Clip(const Clip& clip)
     }
 };
 
-void Clip::start()
+void Clip::start(int amount)
 {
-    for(int i=0; i<this->ticks; i++)
+    amount = (this->ticks>amount? amount:this->ticks);
+    for(int i=0; i<amount; i++)
     {
         cout<< this->name << endl;
     }

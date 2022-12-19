@@ -5,20 +5,19 @@
 #include <assert.h>
 #include <string>
 #include "helper_functions.h"
-#include "Ticks.h"
+#include "Music.h"
 
 using namespace std;
-
 int main()
 {   //Clip command
     map<string, Clip> clips;
     Clip* clipsArr;
+    Music globalTick;
     int flag = 0;
     int numOfClips=0;
     while(true)
     {
-
-       // Ticks tick();
+       // Music tick();
         string command;
         getline(cin, command);
         stringstream stream(command);
@@ -27,7 +26,7 @@ int main()
         while(getline(stream, tok, ' ')) {
             commands.push_back(tok);
         }
-         // clip <name> <ticks to play> <chance1> <chance2> <action1> <action2>
+         // clip <name> <Music to play> <chance1> <chance2> <action1> <action2>
         if(commands[COMMAND] == "clip")
         {
             Clip commandClip = command_clip(commands);
@@ -52,10 +51,10 @@ int main()
                 }
                 clips.clear();
                 flag =1;
+                Music tick(clipsArr, numOfClips);
+                globalTick = tick;
             }
-
-            Ticks tick(clipsArr, numOfClips, stoi(commands[TICKS_TICKS]), command_ticks(commands));
-            tick.start();
+            globalTick.start(stoi(commands[TICKS_TICKS]), command_ticks(commands));
         }
         else{
             cout<<"UNDEFINED COMMAND";
