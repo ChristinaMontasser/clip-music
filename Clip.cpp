@@ -8,8 +8,8 @@ Clip::Clip(string name, int ticks, FollowAction* actions)
     this->ticks = ticks;
     for(int i=0; i<ACTIONS; i++)
     {
-        this->actions[i].actionName= actions->actionName;
-        this->actions[i].chance = actions->chance;
+        this->actions[i].actionName= actions[i].actionName;
+        this->actions[i].chance = actions[i].chance;
     }
 };
 Clip::Clip(const Clip& clip)
@@ -23,7 +23,15 @@ Clip::Clip(const Clip& clip)
     }
 };
 
-void Clip::start(int amount)
+string Clip::getName(){
+    return this->name;
+};
+
+FollowAction* Clip::getFollowAction(){
+    return actions;
+};
+
+void Clip::start(int amount) //COMMENT
 {
     amount = (this->ticks>amount? amount:this->ticks);
     for(int i=0; i<amount; i++)
@@ -44,4 +52,7 @@ action Clip::prioritizeAction(pair<float, float> likelihood){
         return this->actions[1].actionName;
 }
 
-
+bool Clip::operator==(const Clip& clip){
+    return ticks==clip.ticks && name==clip.name && actions[0].actionName==clip.actions[0].actionName &&
+        actions[1].actionName==clip.actions[1].actionName;
+}

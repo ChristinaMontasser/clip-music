@@ -1,5 +1,5 @@
-#include <bits/stdc++.h>
 #include "Clip.h"
+#include <unordered_map>
 
 static unordered_map<string, action> const strToActionConverter =
                                                 {

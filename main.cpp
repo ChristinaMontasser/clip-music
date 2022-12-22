@@ -1,13 +1,14 @@
 #include <iostream>
-#include <bits/stdc++.h>
 #include <vector>
 #include<map>
 #include <assert.h>
 #include <string>
 #include "helper_functions.h"
 #include "Music.h"
-
+#include <sstream>
 using namespace std;
+
+//Command Line run
 int main()
 {   //Clip command
     map<string, Clip> clips;
@@ -20,7 +21,7 @@ int main()
        // Music tick();
         string command;
         getline(cin, command);
-        stringstream stream(command);
+        std::stringstream stream(command);
         vector<string> commands;
         string tok;
         while(getline(stream, tok, ' ')) {
@@ -63,8 +64,6 @@ int main()
 
     }
 
-
-
-
   return 0;
 }
+

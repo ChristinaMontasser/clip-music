@@ -1,5 +1,4 @@
 #include<iostream>
-#include <bits/stdc++.h>
 #include <vector>
 #include <assert.h>
 #include <string>
@@ -18,6 +17,9 @@ public:
     Clip();
     Clip(string name, int ticks, FollowAction* actions);
     Clip(const Clip& clip);
+    string getName();
+    FollowAction* getFollowAction();
     void start(int amount);
     action prioritizeAction(pair<float, float> likelihood);
+    bool operator==(const Clip& clip);
 };
