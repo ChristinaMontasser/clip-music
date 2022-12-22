@@ -35,8 +35,8 @@
 		<Unit filename="Clip.cpp" />
 		<Unit filename="Clip.h" />
 		<Unit filename="Macros.h" />
-		<Unit filename="Ticks.cpp" />
-		<Unit filename="Ticks.h" />
+		<Unit filename="Music.cpp" />
+		<Unit filename="Music.h" />
 		<Unit filename="Types.h" />
 		<Unit filename="helper_functions.cpp" />
 		<Unit filename="helper_functions.h" />
