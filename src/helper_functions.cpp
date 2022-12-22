@@ -48,13 +48,12 @@ vector<pair<float, float>> command_ticks(vector<string> commands)
         }
         else if((commands.size()> TICKS_WITHOUT_PAIR) && (commands.size() < 2*stoi(commands[TICKS_TICKS])))
         {
-            //Estimate the
             //Add the existing values
             for(int i=TICKS_START_PAIR; i<commands.size(); i= i+2)
             {
                 ticks_pair.push_back(pair<float, float>(stof(commands[i]), stof(commands[i+1])));
             }
-            //Estimate the other
+            //Estimate the others
             for(int i=0; i<stoi(commands[TICKS_TICKS])+((commands.size()-2)/2); i++)
             {
                 ticks_pair.push_back(pair<float, float>(randomFloat(), randomFloat()));

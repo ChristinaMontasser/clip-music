@@ -35,7 +35,7 @@ int main()
                 clips.insert(make_pair(commands[CLIP_NAME], commandClip));
             else
                 clips[commands[CLIP_NAME]] = commandClip;
-
+            flag =0;
         }
         else if(commands[COMMAND] == "ticks")
         {
@@ -52,10 +52,10 @@ int main()
                 }
                 clips.clear();
                 flag =1;
-                Music tick(clipsArr, numOfClips);
+                Music tick(clipsArr, numOfClips, stoi(commands[TICKS_TICKS]));
                 globalTick = tick;
             }
-            globalTick.start(stoi(commands[TICKS_TICKS]), command_ticks(commands));
+            globalTick.start(command_ticks(commands));
         }
         else{
             cout<<"UNDEFINED COMMAND";

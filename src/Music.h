@@ -11,9 +11,9 @@ private:
     vector<pair<float, float>> pairsPerTicks;
 public:
     Music();
-    Music(Clip* clips, int numOfClips);
-    void start(int ticks, vector<pair<float, float>> pairsPerTicks);
+    Music(Clip* clips, int numOfClips, int ticks);
     Music(const Music& music);
-
+    bool checkPlayAdvanceStep();
+    bool start( vector<pair<float, float>> pairsPerTicks);
 };
 

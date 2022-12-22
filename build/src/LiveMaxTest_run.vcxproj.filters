@@ -4,10 +4,10 @@
     <ClCompile Include="D:\Christy\LiveMaxTest\src\Clip.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Christy\LiveMaxTest\src\Formula.cpp">
+    <ClCompile Include="D:\Christy\LiveMaxTest\src\Music.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Christy\LiveMaxTest\src\Music.cpp">
+    <ClCompile Include="D:\Christy\LiveMaxTest\src\Types.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="D:\Christy\LiveMaxTest\src\helper_functions.cpp">
@@ -19,9 +19,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D:\Christy\LiveMaxTest\src\Clip.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="D:\Christy\LiveMaxTest\src\Formula.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="D:\Christy\LiveMaxTest\src\Macros.h">

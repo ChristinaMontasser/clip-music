@@ -31,10 +31,9 @@ FollowAction* Clip::getFollowAction(){
     return actions;
 };
 
-void Clip::start(int amount) //COMMENT
+void Clip::start() //COMMENT
 {
-    amount = (this->ticks>amount? amount:this->ticks);
-    for(int i=0; i<amount; i++)
+    for(int i=0; i<this->ticks; i++)
     {
         cout<< this->name << endl;
     }

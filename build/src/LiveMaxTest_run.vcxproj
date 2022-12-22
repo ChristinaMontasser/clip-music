@@ -311,11 +311,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   <ItemGroup>
     <ClCompile Include="D:\Christy\LiveMaxTest\src\Clip.cpp" />
     <ClInclude Include="D:\Christy\LiveMaxTest\src\Clip.h" />
-    <ClCompile Include="D:\Christy\LiveMaxTest\src\Formula.cpp" />
-    <ClInclude Include="D:\Christy\LiveMaxTest\src\Formula.h" />
     <ClInclude Include="D:\Christy\LiveMaxTest\src\Macros.h" />
     <ClCompile Include="D:\Christy\LiveMaxTest\src\Music.cpp" />
     <ClInclude Include="D:\Christy\LiveMaxTest\src\Music.h" />
+    <ClCompile Include="D:\Christy\LiveMaxTest\src\Types.cpp" />
     <ClInclude Include="D:\Christy\LiveMaxTest\src\Types.h" />
     <ClCompile Include="D:\Christy\LiveMaxTest\src\helper_functions.cpp" />
     <ClInclude Include="D:\Christy\LiveMaxTest\src\helper_functions.h" />

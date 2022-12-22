@@ -19,7 +19,7 @@ public:
     Clip(const Clip& clip);
     string getName();
     FollowAction* getFollowAction();
-    void start(int amount);
+    void start();
     action prioritizeAction(pair<float, float> likelihood);
     bool operator==(const Clip& clip);
 };
