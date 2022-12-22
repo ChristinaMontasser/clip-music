@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Christy\LiveMaxTest\build\CMakeFiles\4d2eca6c88845eed85c7352d21fb874e\RUN_TESTS_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{DF0D1EC5-B9C3-3A16-BC2C-52AA3A14BB8A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

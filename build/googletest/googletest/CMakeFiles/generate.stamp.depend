@@ -1,0 +1,18 @@
+# CMake generation dependency list for this directory.
+C:/cmake-3.25.1-windows-x86_64/share/cmake-3.25/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
+C:/cmake-3.25.1-windows-x86_64/share/cmake-3.25/Modules/CMakePackageConfigHelpers.cmake
+C:/cmake-3.25.1-windows-x86_64/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake
+C:/cmake-3.25.1-windows-x86_64/share/cmake-3.25/Modules/CheckIncludeFile.cmake
+C:/cmake-3.25.1-windows-x86_64/share/cmake-3.25/Modules/CheckLibraryExists.cmake
+C:/cmake-3.25.1-windows-x86_64/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake
+C:/cmake-3.25.1-windows-x86_64/share/cmake-3.25/Modules/FindPackageMessage.cmake
+C:/cmake-3.25.1-windows-x86_64/share/cmake-3.25/Modules/FindPython.cmake
+C:/cmake-3.25.1-windows-x86_64/share/cmake-3.25/Modules/FindPython/Support.cmake
+C:/cmake-3.25.1-windows-x86_64/share/cmake-3.25/Modules/FindThreads.cmake
+C:/cmake-3.25.1-windows-x86_64/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake
+C:/cmake-3.25.1-windows-x86_64/share/cmake-3.25/Modules/WriteBasicConfigVersionFile.cmake
+D:/Christy/LiveMaxTest/googletest/googletest/CMakeLists.txt
+D:/Christy/LiveMaxTest/googletest/googletest/cmake/Config.cmake.in
+D:/Christy/LiveMaxTest/googletest/googletest/cmake/gtest.pc.in
+D:/Christy/LiveMaxTest/googletest/googletest/cmake/gtest_main.pc.in
+D:/Christy/LiveMaxTest/googletest/googletest/cmake/internal_utils.cmake

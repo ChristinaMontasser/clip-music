@@ -1,0 +1,10 @@
+^D:\CHRISTY\LIVEMAXTEST\BUILD\CMAKEFILES\28A4E78DD90E452FE55E48F8CEEF0508\GENERATE.STAMP.RULE
+setlocal
+C:\cmake-3.25.1-windows-x86_64\bin\cmake.exe -SD:/Christy/LiveMaxTest -BD:/Christy/LiveMaxTest/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Christy/LiveMaxTest/build/LiveMaxTest.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

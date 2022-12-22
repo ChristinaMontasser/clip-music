@@ -1,0 +1,50 @@
+Start testing: Dec 22 00:39 Egypt Standard Time
+----------------------------------------------------------
+1/1 Testing: LiveMaxTest_tst
+1/1 Test: LiveMaxTest_tst
+Command: "D:/Christy/LiveMaxTest/build/tst/Debug/LiveMaxTest_tst.exe"
+Directory: D:/Christy/LiveMaxTest/build/tst
+"LiveMaxTest_tst" start time: Dec 22 00:39 Egypt Standard Time
+Output:
+----------------------------------------------------------
+[==========] Running 6 tests from 5 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from Clip_constructor
+[ RUN      ] Clip_constructor.test1
+[       OK ] Clip_constructor.test1 (0 ms)
+[----------] 1 test from Clip_constructor (0 ms total)
+
+[----------] 2 tests from Clip_prioritizeAction
+[ RUN      ] Clip_prioritizeAction.likelihood_1_0
+[       OK ] Clip_prioritizeAction.likelihood_1_0 (0 ms)
+[ RUN      ] Clip_prioritizeAction.likelihood_num_num
+[       OK ] Clip_prioritizeAction.likelihood_num_num (0 ms)
+[----------] 2 tests from Clip_prioritizeAction (0 ms total)
+
+[----------] 1 test from command_clip_1
+[ RUN      ] command_clip_1.hf_f1
+[       OK ] command_clip_1.hf_f1 (0 ms)
+[----------] 1 test from command_clip_1 (0 ms total)
+
+[----------] 1 test from command_ticks_1
+[ RUN      ] command_ticks_1.hf_f2
+[       OK ] command_ticks_1.hf_f2 (0 ms)
+[----------] 1 test from command_ticks_1 (0 ms total)
+
+[----------] 1 test from command_ticks_2
+[ RUN      ] command_ticks_2.hf_f2
+[       OK ] command_ticks_2.hf_f2 (0 ms)
+[----------] 1 test from command_ticks_2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 5 test suites ran. (1 ms total)
+[  PASSED  ] 6 tests.
+<end of output>
+Test time =   0.38 sec
+----------------------------------------------------------
+Test Passed.
+"LiveMaxTest_tst" end time: Dec 22 00:39 Egypt Standard Time
+"LiveMaxTest_tst" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 22 00:39 Egypt Standard Time

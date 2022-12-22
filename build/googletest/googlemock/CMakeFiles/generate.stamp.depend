@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+C:/cmake-3.25.1-windows-x86_64/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake
+C:/cmake-3.25.1-windows-x86_64/share/cmake-3.25/Modules/CheckIncludeFile.cmake
+C:/cmake-3.25.1-windows-x86_64/share/cmake-3.25/Modules/CheckLibraryExists.cmake
+C:/cmake-3.25.1-windows-x86_64/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake
+C:/cmake-3.25.1-windows-x86_64/share/cmake-3.25/Modules/FindPackageMessage.cmake
+C:/cmake-3.25.1-windows-x86_64/share/cmake-3.25/Modules/FindThreads.cmake
+D:/Christy/LiveMaxTest/googletest/googlemock/CMakeLists.txt
+D:/Christy/LiveMaxTest/googletest/googlemock/cmake/gmock.pc.in
+D:/Christy/LiveMaxTest/googletest/googlemock/cmake/gmock_main.pc.in

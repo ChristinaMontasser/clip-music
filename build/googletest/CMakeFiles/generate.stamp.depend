@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+C:/cmake-3.25.1-windows-x86_64/share/cmake-3.25/Modules/CMakeDependentOption.cmake
+C:/cmake-3.25.1-windows-x86_64/share/cmake-3.25/Modules/GNUInstallDirs.cmake
+D:/Christy/LiveMaxTest/googletest/CMakeLists.txt
