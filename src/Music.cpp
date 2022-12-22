@@ -64,7 +64,7 @@ bool Music::start( vector<pair<float, float>> mPairsPerTicks)
                         mEndedWith = mNumOfClips-1;
                     break;
                 default:
-                    cout << "AN ERROR OCCURED";
+                    cout << "AN ERROR OCCURED" <<endl;
                     break;
             }
 
@@ -73,7 +73,7 @@ bool Music::start( vector<pair<float, float>> mPairsPerTicks)
 
     }
     else{
-        cout << "The playback should ADVANCE the number of steps given.";
+        cout << "The playback should ADVANCE the number of steps given." <<endl;
         return false;
     }
 

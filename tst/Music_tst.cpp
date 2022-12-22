@@ -13,28 +13,24 @@
 #include <string>
 #include <Music.h>
 
-TEST(Music_start, test1){
-//Arrange 
-    //Clips objects to be sent to music object 
+struct MusicArrangedData
+{
+    vector<std::pair<float, float>> likelihood;
+    Music music;
+};
+MusicArrangedData arrangeDataMusic(string* command_1, string command_2){
     map<string, Clip> clips_music; 
-    string command_1[]= {"clips hello 2 1 0 next none", "clips world 3 1 0 previous none"};
-            string tok;
-
-    for(int i=0; i<2; i++)
+    MusicArrangedData arrangeData;
+    string tok;
+    for(int i=0; i<ACTIONS; i++)
     {
         stringstream stream(command_1[i]);
         vector<string> commands;
         while(getline(stream, tok, ' ')) {
             commands.push_back(tok);
         };
-        clips_music.insert(make_pair(commands[CLIP_NAME], command_clip(commands)));
+        clips_music.insert(make_pair(commands[CLIP_NAME], commandClip(commands)));
     }
-    string command_2 = "ticks 10 0.3 0.8";
-    stringstream stream_2(command_2);
-    vector<string> commands_2;
-    while(getline(stream_2, tok, ' ')) {
-        commands_2.push_back(tok);
-    };
     int numOfClips = clips_music.size();
     Clip* clipsArr = new Clip[numOfClips];
     int i=0;
@@ -43,53 +39,31 @@ TEST(Music_start, test1){
         clipsArr[i] = it.second;
         i++;
     }
-    Music music(clipsArr, 2, stoi(commands_2[TICKS_TICKS]));
-    vector<std::pair<float, float>> likelihood= command_ticks(commands_2);
-//Act
+    //Tick
+    stringstream stream_2(command_2);
+    vector<string> commands_2;
+    while(getline(stream_2, tok, ' ')) {
+        commands_2.push_back(tok);
+    };
 
-   EXPECT_TRUE(music.start(likelihood));
+    arrangeData.music =Music(clipsArr, 2, stoi(commands_2[TICKS_TICKS]));
+    arrangeData.likelihood= commandTicks(commands_2);
+    return arrangeData;
+}
 
-//Assert
-
+TEST(Music_start, advanced_playback){
+    string command_1[]= {"clips hello 2 1 0 next none", "clips world 3 1 0 previous none"};
+    string command_2 = "ticks 10 0.3 0.8";
+    MusicArrangedData arrangedData = arrangeDataMusic(command_1, command_2);
+    EXPECT_TRUE(arrangedData.music.start(arrangedData.likelihood));
 }
 
 
-TEST(Music_start, test2){
-//Arrange 
-    //Clips objects to be sent to music object 
-    map<string, Clip> clips_music; 
+TEST(Music_start, non_advanced_playback){
+    //Arrange     
     string command_1[]= {"clips hello 1 1 0 next none", "clips world 3 1 0 previous none"};
-            string tok;
-
-    for(int i=0; i<2; i++)
-    {
-        stringstream stream(command_1[i]);
-        vector<string> commands;
-        while(getline(stream, tok, ' ')) {
-            commands.push_back(tok);
-        };
-        clips_music.insert(make_pair(commands[CLIP_NAME], command_clip(commands)));
-    }
     string command_2 = "ticks 10 0.3 0.8";
-    stringstream stream_2(command_2);
-    vector<string> commands_2;
-    while(getline(stream_2, tok, ' ')) {
-        commands_2.push_back(tok);
-    };
-    int numOfClips = clips_music.size();
-    Clip* clipsArr = new Clip[numOfClips];
-    int i=0;
-    for(auto it:clips_music)
-    {
-        clipsArr[i] = it.second;
-        i++;
-    }
-    Music music(clipsArr, 2, stoi(commands_2[TICKS_TICKS]));
-    vector<std::pair<float, float>> likelihood= command_ticks(commands_2);
-//Act
-
-   EXPECT_FALSE(music.start(likelihood));
-
-//Assert
-
+    MusicArrangedData arrangedData = arrangeDataMusic(command_1, command_2);
+    //Act & Assert 
+    EXPECT_FALSE(arrangedData.music.start(arrangedData.likelihood));
 }

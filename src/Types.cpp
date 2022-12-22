@@ -10,6 +10,5 @@ enum action
 
 struct FollowAction{
     action actionName;
-    int chance;
-    int playedTimes = 0;
+    float chance;
 };

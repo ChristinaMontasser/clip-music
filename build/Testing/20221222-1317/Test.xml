@@ -24,8 +24,8 @@
 	ProcessorClockFrequency="2712"
 	>
 	<Testing>
-		<StartDateTime>Dec 22 18:59 Egypt Standard Time</StartDateTime>
-		<StartTestTime>1671728386</StartTestTime>
+		<StartDateTime>Dec 22 23:59 Egypt Standard Time</StartDateTime>
+		<StartTestTime>1671746367</StartTestTime>
 		<TestList>
 			<Test>./tst/LiveMaxTest_tst</Test>
 		</TestList>
@@ -36,7 +36,7 @@
 			<FullCommandLine>D:\Christy\LiveMaxTest\build\tst\Debug\LiveMaxTest_tst.exe</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.506811</Value>
+					<Value>1.02994</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -51,12 +51,12 @@
 					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
 				</NamedMeasurement>
 				<Measurement>
-					<Value encoding="base64" compression="gzip">eJyVVE1rg0AQvfsr5tgcIlFK6aWH0JYeSlMIaS9BRNcxLll3ZD+Spr++q4agic3HgCvLvDez763j8ukQEcytlFyu4BEMaqMhV1TCQ7MBbbl7+95yfIgI3gSliWgBKDdckSxROjCasa2OwEGLa4o+C17FjKQ2yjJDylvC/GsGTUQnWb8mBg7Txuf7vxi4m0CpR9c3bglgyCRi5PV5YdeGhlgpToob/otTZjjJgWMfQ3zB1yh4QZTFQTwZEHGBcZB0Uytpy/q5sd2eNejiZTeu9vLDas5ibRJl+rI6if2dFygE7dctKZH11vPZnvaT0oO+HqNCb1EgVCLZpQlbgy7IigymL9/T2fMrGJdzdqWogHLQBisNK75B6Z9tHV72t0M552r3y2ZUlonMYlZfTdCX1c/5RR7n+3HyfTeli4JrqOpeTkYtqqlK1lTWwDbRoLCkDWaguWQI3A37D0PMdAsuFDpjnC+OHUzCe0h39a8i8v4AGEtmPw==</Value>
+					<Value encoding="base64" compression="gzip">eJyVVE1rwkAQvedXzLEeDCot9NKD2NJDqQWxvUgIm81oFjc7YT9i7a/vJpEQNa06kA1h3ps385bJ6qmNCBZOKaE28AgWjTWw1pTDQ/0Bxgn/DoPVsI0IXiUlTDYAVKXQpHJUHox26IoT8LjB1UVnUhQxJ2WsdtySDlaw+JxDHdFZNlSkcyZjw1GhFuTRTXy8XYGGuxHkZnB9Mw0BLFkmB8Exb9K1piYWXkILK35wyq0g1TPKKSSUYotSZERpPI5HPeNcYLQj3SSlXF49N8odWL0uXnbjai/fnRE8NpZpezxWJxGytGSKYxoXku0TxrdBhlLS4dyRlunR+X/2yId/ZXr97jIUqfi8uWWG0JYwGTmZwvT5azqfvYD1OW9rghpoDcZiYWAjSlThn231ily+l06J89sIQ7+ly0wYKKq8b6VqrN4NcrZwFnbMgMacSkzBCK8Nwi/7N0dMTQPONPrh/GyePR5N7iHZV7+KKPgF8O9vdg==</Value>
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>Dec 22 18:59 Egypt Standard Time</EndDateTime>
-		<EndTestTime>1671728387</EndTestTime>
+		<EndDateTime>Dec 22 23:59 Egypt Standard Time</EndDateTime>
+		<EndTestTime>1671746368</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

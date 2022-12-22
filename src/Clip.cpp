@@ -1,9 +1,10 @@
 #include "Clip.h"
-
+#include <cassert>
 //Constructors
 Clip::Clip(){};
-Clip::Clip(string mName, int ticks, FollowAction* mActions)
+Clip::Clip(string mName, unsigned int ticks, FollowAction* mActions)
 {
+    //assert(ticks>=0, "Ticks must be greater than 0");
     this->mName = mName;
     this->ticks = ticks;
     for(int i=0; i<ACTIONS; i++)
@@ -16,7 +17,7 @@ Clip::Clip(const Clip& r_clip)
 {
     this->mName = r_clip.mName;
     this->ticks = r_clip.ticks;
-    for(int i=0; i<ACTIONS; i++)
+    for(unsigned int i=0; i<ACTIONS; i++)
     {
         this->mActions[i].actionName= r_clip.mActions[i].actionName;
         this->mActions[i].chance = r_clip.mActions[i].chance;
@@ -33,7 +34,7 @@ FollowAction* Clip::getFollowAction(){
 
 void Clip::start() //COMMENT
 {
-    for(int i=0; i<this->ticks; i++)
+    for(unsigned int i=0; i<this->ticks; i++)
     {
         cout<< this->mName << endl;
     }
