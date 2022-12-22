@@ -4,16 +4,16 @@
 class Music
 {
 private:
-    Clip* clips;
-    int numOfClips;
-    int ticks;
-    int endedWith;
-    vector<pair<float, float>> pairsPerTicks;
+    Clip *pClips;
+    int mNumOfClips;
+    int mTicks;
+    int mEndedWith;
+    vector<pair<float, float>> mPairsPerTicks;
 public:
     Music();
-    Music(Clip* clips, int numOfClips, int ticks);
-    Music(const Music& music);
+    Music(Clip* pClips, int mNumOfClips, int mTicks);
+    Music(const Music& rMusic);
     bool checkPlayAdvanceStep();
-    bool start( vector<pair<float, float>> pairsPerTicks);
+    bool start( vector<pair<float, float>> mPairsPerTicks);
 };
 

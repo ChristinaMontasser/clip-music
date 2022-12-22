@@ -1,18 +1,18 @@
 #include "Clip.h"
 #include <unordered_map>
 
-static unordered_map<string, action> const strToActionConverter =
+static unordered_map<string, Action> const STRING_TO_ACTION_CONVERTER =
                                                 {
-                                                    {"none", action::none},
-                                                    {"any", action::any},
-                                                    {"other", action::other},
-                                                    {"next", action::next},
-                                                    {"previous", action::previous},
+                                                    {"none", Action::none},
+                                                    {"any", Action::any},
+                                                    {"other", Action::other},
+                                                    {"next", Action::next},
+                                                    {"previous", Action::previous},
                                                 };
 
 int randomInt(int start, int range, int notNum);
 float randomFloat();
-Clip command_clip(vector<string> commands);
-vector<pair<float, float>> command_ticks(vector<string> commands);
+Clip commandClip(vector<string> commands);
+vector<pair<float, float>> commandTicks(vector<string> commands);
 
 

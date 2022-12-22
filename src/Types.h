@@ -1,5 +1,5 @@
 #pragma once
-enum action
+enum Action
 {
     none,
     any,
@@ -10,7 +10,7 @@ enum action
 
 struct FollowAction
 {
-    action actionName;
+    Action actionName;
     int chance;
 };
 

@@ -20,13 +20,14 @@ float randomFloat()
     // A function to generate random numbers
     return ((float) rand()) / (float) RAND_MAX;
 }
-Clip command_clip(vector<string> commands)
+
+Clip commandClip(vector<string> commands)
 {
     assert(commands.size() == 7);
     FollowAction follow_actions[ACTIONS];
     for(int i=0; i<ACTIONS; i++)
     {
-        follow_actions[i].actionName = strToActionConverter.at(commands[i+FOLLOW_ACTION_NAME]);
+        follow_actions[i].actionName = STRING_TO_ACTION_CONVERTER.at(commands[i+FOLLOW_ACTION_NAME]);
         follow_actions[i].chance = stoi(commands[i+FOLLOW_ACTION_CHANCE]);
     }
 
@@ -34,7 +35,7 @@ Clip command_clip(vector<string> commands)
 }
 
 
-vector<pair<float, float>> command_ticks(vector<string> commands)
+vector<pair<float, float>> commandTicks(vector<string> commands)
 {
         vector<pair<float, float>> ticks_pair;
         //ticks <ticks to play> <...optional list of floating point numbers>

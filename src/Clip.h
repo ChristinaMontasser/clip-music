@@ -10,16 +10,16 @@ using namespace std;
 class Clip
 {
 private:
-    string name;
-    FollowAction actions[ACTIONS];
+    string mName;
+    FollowAction mActions[ACTIONS];
 public:
     int ticks;
     Clip();
-    Clip(string name, int ticks, FollowAction* actions);
-    Clip(const Clip& clip);
+    Clip(string mName, int ticks, FollowAction* mActions);
+    Clip(const Clip& r_r_clip);
     string getName();
     FollowAction* getFollowAction();
     void start();
-    action prioritizeAction(pair<float, float> likelihood);
+    Action prioritizeAction(pair<float, float> likelihood);
     bool operator==(const Clip& clip);
 };

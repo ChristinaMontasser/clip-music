@@ -4,63 +4,64 @@
 
 Music::Music(){};
 
-Music::Music(Clip* clips, int numOfClips, int ticks)
+Music::Music(Clip* pClips, int mNumOfClips, int mTicks)
 {
-    this->clips = clips;
-    this->numOfClips = numOfClips;
-    this->endedWith =0;
-    this->ticks = ticks;
+    this->pClips = pClips;
+    this->mNumOfClips = mNumOfClips;
+    this->mEndedWith =0;
+    this->mTicks = mTicks;
 };
- Music::Music(const Music& music){
-    this->clips = music.clips;
-    this->numOfClips = music.numOfClips;
-    this->ticks = music.ticks;
-    this->pairsPerTicks = music.pairsPerTicks;
-    this->endedWith =music.endedWith;
+ Music::Music(const Music& rMusic){
+    this->pClips = rMusic.pClips;
+    this->mNumOfClips = rMusic.mNumOfClips;
+    this->mTicks = rMusic.mTicks;
+    this->mPairsPerTicks = rMusic.mPairsPerTicks;
+    this->mEndedWith =rMusic.mEndedWith;
  }
 
 bool Music::checkPlayAdvanceStep()
 {
     int clipsTicksCount = 0;
-    for(int i =0; i<this->numOfClips; i++)
+    for(int i =0; i<this->mNumOfClips; i++)
     {
-        clipsTicksCount += this->clips[i].ticks;
+        clipsTicksCount += this->pClips[i].ticks;
     }
-    if(((double)this->ticks/(double)clipsTicksCount) == (this->ticks/clipsTicksCount))
+    if(((double)this->mTicks/(double)clipsTicksCount) == (this->mTicks/clipsTicksCount))
         return true;
     return false;
 }
-bool Music::start( vector<pair<float, float>> pairsPerTicks)
+
+bool Music::start( vector<pair<float, float>> mPairsPerTicks)
 {
-    if(this->checkPlayAdvanceStep()){   
-        this->pairsPerTicks = pairsPerTicks;
+    if(this->checkPlayAdvanceStep()){
+        this->mPairsPerTicks = mPairsPerTicks;
         int countTicks = 0;
-        action actionPriority;
-        while(countTicks<ticks)
+        Action actionPriority;
+        while(countTicks<mTicks)
         {
-            actionPriority = this->clips[endedWith].prioritizeAction(this->pairsPerTicks.at(countTicks));
-            this->clips[endedWith].start();
-            countTicks+=clips[endedWith].ticks;
+            actionPriority = this->pClips[mEndedWith].prioritizeAction(this->mPairsPerTicks.at(countTicks));
+            this->pClips[mEndedWith].start();
+            countTicks+=pClips[mEndedWith].ticks;
             switch(actionPriority)
             {
-                case action::none:
-                    endedWith=endedWith;
+                case Action::none:
+                    mEndedWith=mEndedWith;
                     break;
-                case action::any:
-                    endedWith =randomInt(0,numOfClips, -1);
+                case Action::any:
+                    mEndedWith =randomInt(0,mNumOfClips, -1);
                     break;
-                case action::other:
-                    endedWith= randomInt(0,numOfClips, endedWith);
+                case Action::other:
+                    mEndedWith= randomInt(0,mNumOfClips, mEndedWith);
                     break;
-                case action::next:
-                    endedWith++;
-                    if(endedWith>=numOfClips)
-                        endedWith = 0;
+                case Action::next:
+                    mEndedWith++;
+                    if(mEndedWith>=mNumOfClips)
+                        mEndedWith = 0;
                     break;
-                case action::previous:
-                    endedWith--;
-                    if(endedWith<0)
-                        endedWith = numOfClips-1;
+                case Action::previous:
+                    mEndedWith--;
+                    if(mEndedWith<0)
+                        mEndedWith = mNumOfClips-1;
                     break;
                 default:
                     cout << "AN ERROR OCCURED";
