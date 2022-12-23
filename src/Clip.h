@@ -13,9 +13,9 @@ private:
     string mName;
     FollowAction mActions[ACTIONS];
 public:
-    unsigned int ticks;
+    int ticks;
     Clip();
-    Clip(string mName, unsigned int ticks, FollowAction* mActions);
+    Clip(string mName, int ticks, FollowAction* mActions);
     Clip(const Clip& r_r_clip);
     string getName();
     FollowAction* getFollowAction();

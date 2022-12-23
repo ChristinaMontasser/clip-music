@@ -43,7 +43,7 @@ TEST(Clip_constructor, normal_scenerio) {
 
     //arrange
     string name = "hello";
-    unsigned int ticks = 3;
+    int ticks = 3;
     FollowAction actions[2];
     actions[0].actionName = Action::next;
     actions[1].actionName = Action::none;

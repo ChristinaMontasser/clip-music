@@ -25,7 +25,7 @@ Clip commandClip(vector<string> commands)
 {
     assert(commands.size() == 7);
     FollowAction follow_actions[ACTIONS];
-    for(unsigned int i=0; i<ACTIONS; i++)
+    for(int i=0; i<ACTIONS; i++)
     {
         follow_actions[i].actionName = STRING_TO_ACTION_CONVERTER.at(commands[i+FOLLOW_ACTION_NAME]);
         follow_actions[i].chance = stof(commands[i+FOLLOW_ACTION_CHANCE]);
@@ -50,7 +50,7 @@ vector<pair<float, float>> commandTicks(vector<string> commands)
         else if((commands.size()> TICKS_WITHOUT_PAIR) && (commands.size() < 2*stoi(commands[TICKS_TICKS])))
         {
             //Add the existing values
-            for(unsigned int i=TICKS_START_PAIR; i<commands.size(); i= i+2)
+            for(int i=TICKS_START_PAIR; i<commands.size(); i= i+2)
             {
                 ticks_pair.push_back(pair<float, float>(stof(commands[i]), stof(commands[i+1])));
             }

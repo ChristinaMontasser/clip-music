@@ -6,6 +6,7 @@ Music::Music(){};
 
 Music::Music(Clip* pClips, int mNumOfClips, int mTicks)
 {
+    assert(mTicks>=0 && "Ticks must be greater than 0");
     this->pClips = pClips;
     this->mNumOfClips = mNumOfClips;
     this->mEndedWith =0;

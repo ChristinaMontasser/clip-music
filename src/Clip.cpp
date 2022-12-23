@@ -2,9 +2,9 @@
 #include <cassert>
 //Constructors
 Clip::Clip(){};
-Clip::Clip(string mName, unsigned int ticks, FollowAction* mActions)
+Clip::Clip(string mName, int ticks, FollowAction* mActions)
 {
-    //assert(ticks>=0, "Ticks must be greater than 0");
+    assert(ticks>=0 && "Ticks must be greater than 0");
     this->mName = mName;
     this->ticks = ticks;
     for(int i=0; i<ACTIONS; i++)
@@ -17,7 +17,7 @@ Clip::Clip(const Clip& r_clip)
 {
     this->mName = r_clip.mName;
     this->ticks = r_clip.ticks;
-    for(unsigned int i=0; i<ACTIONS; i++)
+    for(int i=0; i<ACTIONS; i++)
     {
         this->mActions[i].actionName= r_clip.mActions[i].actionName;
         this->mActions[i].chance = r_clip.mActions[i].chance;
@@ -34,19 +34,20 @@ FollowAction* Clip::getFollowAction(){
 
 void Clip::start() //COMMENT
 {
-    for(unsigned int i=0; i<this->ticks; i++)
+    for(int i=0; i<this->ticks; i++)
     {
         cout<< this->mName << endl;
     }
 }
 
 Action Clip::prioritizeAction(pair<float, float> likelihood){
+    float overallChance = this->mActions[0].chance+this->mActions[1].chance;
     //Edge cases
-    if(this->mActions[0].chance == 0)
+    /*if(this->mActions[0].chance == 0)
         return this->mActions[1].actionName;
     if(this->mActions[1].chance == 0)
-        return this->mActions[0].actionName;
-    if(likelihood.first>likelihood.second)
+        return this->mActions[0].actionName;*/
+    if((likelihood.first*(this->mActions[0].actionName/overallChance))>(likelihood.second*(this->mActions[1].actionName/overallChance)))
         return this->mActions[0].actionName;
     else
         return this->mActions[1].actionName;

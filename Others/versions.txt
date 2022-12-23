@@ -1,0 +1,11 @@
+Editor --> visual studio code & CodeBlocks
+System --> Windows, 64-bit, Hp & Dell
+Compiler --> WinGW gcc 6.3.0
+CMake --> 3.25.1 
+windowsSdkVersion --> "10.0.19041.0",
+cStandar--> "c17",
+cppStandard --> "c++17",
+
+
+OTHERS can be found in the .vs/c_cpp_properties.json .
+ 

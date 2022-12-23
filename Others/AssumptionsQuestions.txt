@@ -1,0 +1,18 @@
+ASSUMPTION:
+Because the lack of domain analysis, I have assumed some things...
+
+1. The importance of ticks likelhoods, which have been given in ticks command, is
+not clear to me, I have assumed that's the probablity for actions in each clip. Therefore, 
+instead of using only the "chance", I use both the given likelihood and the chance 
+probability, that I calculate, between the two actions.
+
+
+2. I assumed that music is played once tick command is typed. 
+
+3. The generated music is depend only on clips that are saved right before 
+the tick command. 
+
+4. There are a lot of "try" and "catch" and others scenerios shouls be thought of, 
+but I have been struggling and spending 3 days working on incompatibilty problems 
+among google test, CMake an compiler.
+

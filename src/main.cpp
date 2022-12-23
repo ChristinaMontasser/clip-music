@@ -6,12 +6,15 @@
 #include "helper_functions.h"
 #include "Music.h"
 #include <sstream>
+#include <algorithm>
+
 using namespace std;
 
 //Command Line run
 int main()
 {   //Clip command
-    map<string, Clip> clips;
+    vector<Clip> clips;
+    vector<string> duplicationCheck;
     Clip* clipsArr;
     Music globalTick;
     int flag = 0;
@@ -31,10 +34,19 @@ int main()
         if(commands[COMMAND] == "clip")
         {
             Clip commandClipObj = commandClip(commands);
-            if(clips.count(commands[CLIP_NAME])==0)
-                clips.insert(make_pair(commands[CLIP_NAME], commandClipObj));
+            auto it = find(duplicationCheck.begin(), duplicationCheck.end(), commands[CLIP_NAME]);
+            if (it == duplicationCheck.end())
+            {
+                clips.push_back(commandClipObj);
+                duplicationCheck.push_back(commandClipObj.getName());
+            }
             else
-                clips[commands[CLIP_NAME]] = commandClipObj;
+            {
+                int index = (it - duplicationCheck.begin());
+                cout << index <<endl;
+                clips[index] = commandClipObj;
+
+            }
             flag =0;
         }
         else if(commands[COMMAND] == "ticks")
@@ -47,7 +59,7 @@ int main()
                 int i=0;
                 for(auto it:clips)
                 {
-                    clipsArr[i] = it.second;
+                    clipsArr[i] = it;
                     i++;
                 }
                 clips.clear();

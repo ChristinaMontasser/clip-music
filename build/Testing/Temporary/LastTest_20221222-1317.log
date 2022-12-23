@@ -1,10 +1,10 @@
-Start testing: Dec 22 23:59 Egypt Standard Time
+Start testing: Dec 23 00:43 Egypt Standard Time
 ----------------------------------------------------------
 1/1 Testing: LiveMaxTest_tst
 1/1 Test: LiveMaxTest_tst
 Command: "D:/Christy/LiveMaxTest/build/tst/Debug/LiveMaxTest_tst.exe"
 Directory: D:/Christy/LiveMaxTest/build/tst
-"LiveMaxTest_tst" start time: Dec 22 23:59 Egypt Standard Time
+"LiveMaxTest_tst" start time: Dec 23 00:43 Egypt Standard Time
 Output:
 ----------------------------------------------------------
 [==========] Running 8 tests from 5 test suites.
@@ -35,7 +35,8 @@ world
 world
 [       OK ] Music_start.advanced_playback (0 ms)
 [ RUN      ] Music_start.non_advanced_playback
-The playback should ADVANCE the number of steps given.[       OK ] Music_start.non_advanced_playback (0 ms)
+The playback should ADVANCE the number of steps given.
+[       OK ] Music_start.non_advanced_playback (0 ms)
 [----------] 2 tests from Music_start (0 ms total)
 
 [----------] 1 test from helper_functions_clip
@@ -51,14 +52,14 @@ The playback should ADVANCE the number of steps given.[       OK ] Music_start.n
 [----------] 2 tests from helper_functions_ticks (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 8 tests from 5 test suites ran. (4 ms total)
+[==========] 8 tests from 5 test suites ran. (9 ms total)
 [  PASSED  ] 8 tests.
 <end of output>
-Test time =   1.03 sec
+Test time =   0.52 sec
 ----------------------------------------------------------
 Test Passed.
-"LiveMaxTest_tst" end time: Dec 22 23:59 Egypt Standard Time
-"LiveMaxTest_tst" time elapsed: 00:00:01
+"LiveMaxTest_tst" end time: Dec 23 00:43 Egypt Standard Time
+"LiveMaxTest_tst" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Dec 22 23:59 Egypt Standard Time
+End testing: Dec 23 00:43 Egypt Standard Time
