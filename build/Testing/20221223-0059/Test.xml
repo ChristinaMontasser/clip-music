@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20221223-0059-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.25.1"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Windows"
+	Hostname="DESKTOP-9FDKP4Q"
+	OSRelease=" Professional"
+	OSVersion=" (Build 19045)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="14"
+	ProcessorCacheSize="-1"
+	NumberOfLogicalCPU="4"
+	NumberOfPhysicalCPU="2"
+	TotalVirtualMemory="9353"
+	TotalPhysicalMemory="8073"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2712"
+	>
+	<Testing>
+		<StartDateTime>Dec 23 14:18 Egypt Standard Time</StartDateTime>
+		<StartTestTime>1671797915</StartTestTime>
+		<TestList>
+			<Test>./tst/LiveMaxTest_tst</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>LiveMaxTest_tst</Name>
+			<Path>./tst</Path>
+			<FullName>./tst/LiveMaxTest_tst</FullName>
+			<FullCommandLine>D:\Christy\LiveMaxTest\build\tst\Debug\LiveMaxTest_tst.exe</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.537248</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>D:\Christy\LiveMaxTest\build\tst\Debug\LiveMaxTest_tst.exe</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyVVE1rwkAQvedXzLEeDCot9NKD2NJDqQWxvUgIm81oFjc7YT9i7a/vJpEQNa06kA1h3ts37y2b1VNbESycUkJt4BEsGmtgrSmHh/oDjBP+HQarYVsRvEpKmGwAqEqhSeWoPBjt0BUn4HGDqzedSVHEnJSx2nFLOljB4nMOdUVn3VCRzpmMDUeFWpBHN/XxdgUa7kaQm8H1wzQEsGSZHATHvEk3mppYeAktrPjBKbeCVI+VU0goxRalyIjSeByPeuxcYLSWbpJSLq+eG+UOrN4UL6dxdZbvzggeG8u0PbbVaYQsLZnimMaFZPuE8W2QoZR0WHekZXq0/t89yuFfmd68uwxFKj4fbpkhtFuYjJxMYfr8NZ3PXsD6no81QQ20BmOxMLARJarw77l6VS4fTGeLs+MIQ6+3zISBomr7UarB6rtBzhbOwo4Z0JhTiSkY4aVB+Mv+zRFT04Azjd6c9+bZ49HkHpJ99auIgl/GzG9T====</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Dec 23 14:18 Egypt Standard Time</EndDateTime>
+		<EndTestTime>1671797915</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

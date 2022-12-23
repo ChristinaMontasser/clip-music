@@ -1,0 +1,65 @@
+Start testing: Dec 23 14:18 Egypt Standard Time
+----------------------------------------------------------
+1/1 Testing: LiveMaxTest_tst
+1/1 Test: LiveMaxTest_tst
+Command: "D:/Christy/LiveMaxTest/build/tst/Debug/LiveMaxTest_tst.exe"
+Directory: D:/Christy/LiveMaxTest/build/tst
+"LiveMaxTest_tst" start time: Dec 23 14:18 Egypt Standard Time
+Output:
+----------------------------------------------------------
+[==========] Running 8 tests from 5 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from Clip_constructor
+[ RUN      ] Clip_constructor.normal_scenerio
+[       OK ] Clip_constructor.normal_scenerio (0 ms)
+[----------] 1 test from Clip_constructor (0 ms total)
+
+[----------] 2 tests from Clip_prioritizeAction
+[ RUN      ] Clip_prioritizeAction.likelihood_1_0
+[       OK ] Clip_prioritizeAction.likelihood_1_0 (0 ms)
+[ RUN      ] Clip_prioritizeAction.likelihood_num_num
+[       OK ] Clip_prioritizeAction.likelihood_num_num (0 ms)
+[----------] 2 tests from Clip_prioritizeAction (0 ms total)
+
+[----------] 2 tests from Music_start
+[ RUN      ] Music_start.advanced_playback
+hello
+hello
+world
+world
+world
+hello
+hello
+world
+world
+world
+[       OK ] Music_start.advanced_playback (0 ms)
+[ RUN      ] Music_start.non_advanced_playback
+The playback should ADVANCE the number of steps given.
+[       OK ] Music_start.non_advanced_playback (0 ms)
+[----------] 2 tests from Music_start (0 ms total)
+
+[----------] 1 test from helper_functions_clip
+[ RUN      ] helper_functions_clip.command_clip
+[       OK ] helper_functions_clip.command_clip (0 ms)
+[----------] 1 test from helper_functions_clip (0 ms total)
+
+[----------] 2 tests from helper_functions_ticks
+[ RUN      ] helper_functions_ticks.command_ticks_without_likelihood
+[       OK ] helper_functions_ticks.command_ticks_without_likelihood (0 ms)
+[ RUN      ] helper_functions_ticks.command_ticks_with_some_likelihoods
+[       OK ] helper_functions_ticks.command_ticks_with_some_likelihoods (0 ms)
+[----------] 2 tests from helper_functions_ticks (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 5 test suites ran. (1 ms total)
+[  PASSED  ] 8 tests.
+<end of output>
+Test time =   0.54 sec
+----------------------------------------------------------
+Test Passed.
+"LiveMaxTest_tst" end time: Dec 23 14:18 Egypt Standard Time
+"LiveMaxTest_tst" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 23 14:18 Egypt Standard Time

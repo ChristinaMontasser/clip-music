@@ -42,12 +42,7 @@ void Clip::start() //COMMENT
 
 Action Clip::prioritizeAction(pair<float, float> likelihood){
     float overallChance = this->mActions[0].chance+this->mActions[1].chance;
-    //Edge cases
-    /*if(this->mActions[0].chance == 0)
-        return this->mActions[1].actionName;
-    if(this->mActions[1].chance == 0)
-        return this->mActions[0].actionName;*/
-    if((likelihood.first*(this->mActions[0].actionName/overallChance))>(likelihood.second*(this->mActions[1].actionName/overallChance)))
+    if((likelihood.first*(this->mActions[0].chance/overallChance))>=(likelihood.second*(this->mActions[1].chance/overallChance)))
         return this->mActions[0].actionName;
     else
         return this->mActions[1].actionName;

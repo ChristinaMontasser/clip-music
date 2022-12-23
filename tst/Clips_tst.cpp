@@ -16,14 +16,12 @@ struct ClipArrangedData
 ClipArrangedData arrangeDataClip(string command_1, string command_2)
 {
     ClipArrangedData arrangedData;
-    //string command_1 = "clips hello 2 1 0 next none";
     stringstream stream(command_1);
     vector<string> commands_1;
     string tok;
     while(getline(stream, tok, ' ')) {
         commands_1.push_back(tok);
     };
-    //string command_2 = "ticks 1 0.3 0.8";
     stringstream stream_2(command_2);
     vector<string> commands_2;
     while(getline(stream_2, tok, ' ')) {
@@ -59,15 +57,14 @@ TEST(Clip_constructor, normal_scenerio) {
 //action prioritizeAction(pair<float, float> likelihood);
 TEST(Clip_prioritizeAction, likelihood_1_0) {
     string command_1 = "clips hello 2 1 0 next none";
-    string command_2 = "ticks 1 0.3 0.8";
+    string command_2 = "ticks 10 0.3 0.8";
     ClipArrangedData arrangedData = arrangeDataClip(command_1, command_2);
     EXPECT_EQ(arrangedData.clip.prioritizeAction(arrangedData.likelihood[0]), Action::next);
 }
 
 TEST(Clip_prioritizeAction, likelihood_num_num) {
-    //Case when they are "1, 0" 
-    string command_1 = "clips hello 2 3 1 next none";
-    string command_2 = "ticks 10 0.3 0.8";
+    string command_1 = "clips hello 2 3.0 2.0 next none";
+    string command_2 = "ticks 4 0.3 0.8";
     ClipArrangedData arrangedData = arrangeDataClip(command_1, command_2);
     EXPECT_EQ(arrangedData.clip.prioritizeAction(arrangedData.likelihood.at(0)), Action::none); //Because 0.8 > 0.3
 }

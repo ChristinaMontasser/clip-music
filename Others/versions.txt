@@ -8,4 +8,14 @@ cppStandard --> "c++17",
 
 
 OTHERS can be found in the .vs/c_cpp_properties.json .
- 
+
+
+
+
+Name: Christina Montasser Saad Naguib
+Contact:
+	email --> ch.saad825@gmail.com
+	What'sApp --> +201093302971  (Egypt)
+	LinkedIn --> https://www.linkedin.com/in/christina-saad-81703a197/
+
+	

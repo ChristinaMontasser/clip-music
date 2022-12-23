@@ -43,7 +43,6 @@ int main()
             else
             {
                 int index = (it - duplicationCheck.begin());
-                cout << index <<endl;
                 clips[index] = commandClipObj;
 
             }
