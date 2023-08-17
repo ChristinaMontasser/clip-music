@@ -12,7 +12,6 @@ probability, that I calculate, between the two actions.
 3. The generated music does depend only on clips that are saved right before 
 the tick command. 
 
-4. There are a lot of "try" and "catch" and others scenerios shouls be thought of, 
-but I have been struggling and spending 2 days working on incompatibilty problems 
-among google test, CMake an compiler.
+4. There are a lot of "try" and "catch" and other scenerios shouls be thought of.
+
 
