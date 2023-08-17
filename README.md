@@ -1,4 +1,3 @@
-# Live_Max
 # Task Description: Follow Me
 A clip in Live contains musical content, ranging from a short sound to an entire song. Some
 clips play once, while others loop forever. Clips start playing when they are triggered. Clips
